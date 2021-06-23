@@ -1,5 +1,5 @@
 <?php
-include('faq.php');
+include('./faq.php');
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +11,15 @@ include('faq.php');
     <title>Google - FAQ</title>
 </head>
 <body>
-    
+    <?php
+        foreach ($faq as $el){
+             ?>
+                <div class="question">
+                <h2><?php echo $el["domanda"] ?></h2>
+                <p><?php echo $el["risposta"] ?></p>
+                </div>
+             <?php
+        }
+    ?>
 </body>
 </html>
