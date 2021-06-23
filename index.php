@@ -8,9 +8,15 @@ include('./faq.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Google - FAQ</title>
 </head>
 <body>
+    <header>
+        <img src="./img/google_logo.png" alt="" id="logo">
+    </header>
+    <hr>
+    <section>
     <?php
         foreach ($faq as $el){
              ?>
@@ -21,5 +27,6 @@ include('./faq.php');
              <?php
         }
     ?>
+    </section>
 </body>
 </html>
