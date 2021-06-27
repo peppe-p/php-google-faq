@@ -1,13 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.active * {
+    color: #3367d6 !important;
+}
+
+.active {
+    border-bottom: 3px solid #3367d6;
+}
+
 section {
-    width: 1500px;
+    width: 1000px;
     margin: 150px auto;
 }
 
 #logo {
     height: 45px;
     margin: 25px;
+}
+
+header ul, header a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+header ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    margin: 0 20px;
+    padding: 10px 0;
 }
